@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Progress | Animated Short Film</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>📈 Project Progress</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weekly-plan.html">Weekly Plan</a></li>
+                <li><a href="progress.html" class="active">Project Progress</a></li>
+                <li><a href="concept.html">Project Concept</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="progress-overview">
+            <h2>📅 Progress Overview</h2>
+            <p>This page tracks the development of the animated short film, from pre-production to rendering and finalization.</p>
+        </section>
+
+        <section class="storyboard">
+            <h2>🎬 Storyboard Development</h2>
+            <p>Below are the latest storyboard drafts for key sequences in the animation:</p>
+
+            <!-- First Storyboard Image -->
+            <div class="image-container">
+                <img src="storyboard2.jpg" alt="Storyboard Scene 1">
+                <p class="caption">Storyboard - Scene 1</p>
+            </div>
+
+            <!-- Second Storyboard Image -->
+            <div class="image-container">
+                <img src="storyboard2.jpg" alt="Storyboard Scene 2">
+                <p class="caption">Storyboard - Scene 2</p>
+            </div>
+        </section>
+
+        <button onclick="goBack()">⬅ Go Back</button>
+    </main>
+
+    <footer>
+        <p>© 2024 Animated Short Film Project</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
